@@ -1,0 +1,74 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: block;
+  background-image:url("images/no.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  font-size:60px;
+  color: white;
+  text-align: center;
+}
+
+.pe{
+	text-align: center;
+	width: 100%;
+	height: 10%;
+}
+
+.se{
+	width: auto;
+	height: 10%;
+	display: none;
+	padding: auto;
+}
+
+.row{
+	display: none;
+	width: 100%;
+	height: 45%
+}
+
+.box{
+	width: 50%;
+	height: 100%;
+	opacity: 0.5;
+}
+
+.red{background-color:red}
+.blue{background-color:blue}
+.green{background-color:green}
+.yellow{background-color:yellow}
+
+/*This gives the font a black outline that makes i stand out from the background*/
+.outline{
+text-shadow:
+ 2px 2px 0 black,
+ 2px -2px 0 black, 
+ -2px 2px 0 black,
+ -2px -2px 0 black,
+ 2px 0px 0 black,
+ 0px 2px 0 black,
+ -2px 0px 0 black,
+ 0px -2px 0 black;
+}
+
+
+/*When the width of the viewport is less than 700px it will remove the .pe class and reveal he .se class*/
+@media only screen and (max-width:800px){
+	body {background-image:url("images/OK.jpg");}
+	.pe {display:none}
+	.se {display:block}
+	.row{display:flex}
+}
+
+@media only screen and (max-width:580px){
+	.row{display:block}
+	
+	.box{
+		display:block;
+		width:100%;
+		height:50%
+	}
+}
