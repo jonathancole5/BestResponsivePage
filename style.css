@@ -57,7 +57,7 @@ text-shadow:
 
 /*When the width of the viewport is less than 700px it will remove the .pe class and reveal he .se class*/
 @media only screen and (max-width:800px){
-	body {background-image:url("images/oK.jpg");}
+	body {background-image:url("images/ok.jpg");}
 	.pe {display:none}
 	.se {display:block}
 	.row{display:flex}
